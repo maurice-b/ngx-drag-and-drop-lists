@@ -1,0 +1,17 @@
+{
+  "name": "@vfz/ngx-drag-and-drop-lists",
+  "version": "2.0.0",
+  "private": false,
+  "author": "Maurice Bartels <mbartels@ilionx.com>",
+  "description": "angular drag and drop component for lists",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maurice-b/ngx-drag-and-drop-lists.git"
+  },
+  "peerdependencies": {
+    "@angular/animations": "~11.0.5",
+    "@angular/common": "~11.0.5",
+    "@angular/core": "^11.0.5",
+    "rxjs": "^6.6.3"
+  }
+}

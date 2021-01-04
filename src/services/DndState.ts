@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import { ALL_EFFECTS, DndStateConfig } from '../index';
+import {DndStateConfig} from './DndDraggableConfig';
+import {ALL_EFFECTS} from './constants';
+
 @Injectable()
 export class DndState {
     public dragState: DndStateConfig = {
@@ -12,8 +14,11 @@ export class DndState {
     /**
      * Filters an array of drop effects using a HTML5 effectAllowed string.
      */
-    public filterEffects(effects: string[], effectAllowed: string) {
-        if (effectAllowed === 'all') return effects;
+    public filterEffects(effects: string[], effectAllowed: string): string[] {
+        if (effectAllowed === 'all') {
+            return effects;
+        }
+
         return effects.filter((effect) => {
             return effectAllowed.toLowerCase().indexOf(effect) !== -1;
         });

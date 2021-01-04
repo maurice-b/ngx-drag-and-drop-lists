@@ -1,13 +1,5 @@
 import { Directive, Input, Output, OnDestroy, OnInit, ElementRef, HostListener, EventEmitter } from '@angular/core';
-import { DndState } from '../services';
-import {
-    DndDraggableConfig,
-    DndStateConfig,
-    ALL_EFFECTS,
-    MIME_TYPE,
-    EDGE_MIME_TYPE,
-    MSIE_MIME_TYPE,
-} from '../index';
+import {ALL_EFFECTS, DndDraggableConfig, DndState, DndStateConfig, EDGE_MIME_TYPE, MIME_TYPE, MSIE_MIME_TYPE} from '../services';
 import { dropAccepted } from './dnd-list';
 import { Subscription } from 'rxjs';
 @Directive({

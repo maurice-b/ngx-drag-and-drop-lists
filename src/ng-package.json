@@ -1,0 +1,14 @@
+{
+  "$schema": "../node_modules/ng-packagr/package.schema.json",
+  "lib": {
+    "entryFile": "public_api.ts",
+    "umdModuleIds": {
+
+    },
+    "styleIncludePaths": [ ]
+  },
+  "dest": "../dist/@vfz-ngx-drag-and-drop-lists",
+  "whitelistedNonPeerDependencies": [
+    "."
+  ]
+}
