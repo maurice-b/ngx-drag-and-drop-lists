@@ -3,3 +3,5 @@ aot/
 debug.log
 npm-debug.log
 /.vscode
+/dist/
+.idea
